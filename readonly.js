@@ -21,7 +21,7 @@
         }
         return originalFetch(input, options);
     };
-    const admin = '#addImageBtn, #addReviewBtn, #addCategoryBtn, #uploadForm, #reviewForm, .delete-btn, .edit-btn, .review-delete, .review-edit, .category-delete';
+    const admin = '#addSoundBtn, #addImageBtn, #addReviewBtn, #addCategoryBtn, #uploadForm, #reviewForm, .delete-btn, .edit-btn, .review-delete, .review-edit, .category-delete';
     document.addEventListener('click', event => {
         if (event.target.closest(admin)) {
             event.preventDefault();
