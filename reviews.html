@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Danini's World</title>
+    <link rel="stylesheet" href="reviews.css">
+<script src="readonly.js"></script>
+<link rel="stylesheet" href="readonly.css">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="index.html">Danini's World</a></h1>
+        <div class="nav">
+            <a href="outfits.html">outfits</a>
+            <a href="reviews.html">reviews</a>
+            <a href="art.html">art</a>
+            <a href="sounds.html">sounds</a>
+        </div>
+
+        <button id="addReviewBtn">add review</button>
+
+        <div id="reviewForm" style="display: none;">
+            <div class="form-group">
+                <label for="titleInput">Title:</label>
+                <input type="text" id="titleInput" placeholder="Review title">
+            </div>
+            <div class="form-group">
+                <label>Categories:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="category" value="Music"> Music</label>
+                    <label><input type="checkbox" name="category" value="Art"> Art</label>
+                    <label><input type="checkbox" name="category" value="Food"> Food</label>
+                    <label><input type="checkbox" name="category" value="Cinema"> Cinema</label>
+                    <label><input type="checkbox" name="category" value="Writing"> Writing</label>
+                    <label><input type="checkbox" name="category" value="gelato"> gelato</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ratingInput">Rating (0-5):</label>
+                <input type="number" id="ratingInput" min="0" max="5" step="0.5" placeholder="0-5">
+            </div>
+            <div class="form-group">
+                <label for="reviewTextInput">Review:</label>
+                <textarea id="reviewTextInput" rows="6" placeholder="Write your review here..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="reviewImageInput">Image (optional):</label>
+                <input type="file" id="reviewImageInput" accept="image/*">
+            </div>
+            <input type="password" id="reviewPasswordInput" placeholder="Password" required>
+            <button id="submitReviewBtn">Submit</button>
+            <button id="cancelReviewBtn">Cancel</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Music">Music</button>
+            <button class="filter-btn" data-category="Art">Art</button>
+            <button class="filter-btn" data-category="Food">Food</button>
+            <button class="filter-btn" data-category="Cinema">Cinema</button>
+            <button class="filter-btn" data-category="Writing">Writing</button>
+            <button class="filter-btn" data-category="gelato">gelato</button>
+            <button id="addCategoryBtn" class="filter-btn" style="background-color: #E3E3E3;">+</button>
+        </div>
+        
+        <div id="reviewsContainer" class="reviews-container"></div>
+    </div>
+    <script src="reviews.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfits - Danini's World</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="readonly.js"></script>
+<link rel="stylesheet" href="readonly.css">
+</head>
+<body class="outfits">
+    <div class="container">
+        <h1><a href="index.html">Danini's World</a></h1>
+        <div class="nav">
+            <a href="outfits.html">outfits</a>
+            <a href="reviews.html">reviews</a>
+            <a href="art.html">art</a>
+            <a href="sounds.html">sounds</a>
+        </div>
+        <button id="addImageBtn">add image</button>
+        <div id="uploadForm" style="display: none;">
+            <div class="form-group">
+                <label for="imageInput">Image:</label>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="dateInput">Date:</label>
+                <input type="text" id="dateInput" placeholder="Date (e.g., 1-15-25)">
+            </div>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <button id="uploadBtn">Upload</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+        <div id="gallery" class="gallery"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>
+

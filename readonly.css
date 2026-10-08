@@ -1,0 +1,2 @@
+#addImageBtn, #addReviewBtn, #addCategoryBtn, #uploadForm, #reviewForm,
+.delete-btn, .edit-btn, .review-delete, .review-edit, .category-delete { display: none !important; }
